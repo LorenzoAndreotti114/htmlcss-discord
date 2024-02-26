@@ -9,18 +9,24 @@ hr {
     width: 1px;
 }
 
+body {
+    font-family: Whitney, "Helvetica Neue" , Helvetica, Arial, sans-serif;
+}
+
 /* Header */
 
 .Header-Container {
     background-color: #255EE9;
     height: 50px;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    justify-content:center;
+    align-items:center;
 }
 
 .Header-Container > div {
     display: flex;
+    gap: 25%;
+    justify-content: center;
 }
 
 .Header-Logo {
