@@ -12,7 +12,7 @@ hr {
 /* Header */
 
 .Header-Container {
-    background-color: rgb(167, 230, 255);
+    background-color: #255EE9;
     height: 50px;
     display: flex;
     justify-content: center;
@@ -21,74 +21,101 @@ hr {
 
 .Header-Container > div {
     display: flex;
-    background-color: rgb(228, 194, 0);
 }
 
 .Header-Logo {
     display: flex;
     align-items: center;
-    text-align: left;
-    border-style: dashed;
-    border-color: solid black;
-    border-width: 1px;
-    padding-right: 150px;
+    font-weight: 700;
+    color: white;
+}
+
+.Gap {
+    display: flex;
+    justify-content: space-between;
 }
 
 .Header-Links {
     display: flex;
     align-items: center;
-    text-align: center;
-    border-style: dashed;
-    border-color: solid black;
-    border-width: 1px;
-    padding-right: 150px;
-    padding-left: 150px;
+    justify-content:space-between;
+    text-decoration: white;
+}
+
+.No-Link {
+    text-decoration: none;
+    color: white;
 }
 
 .Header-Links ul {
     list-style-type: none;
     display: flex;
+    text-wrap: nowrap;
+    justify-content: center;
+    text-align: center;
 }
 
 li {
-    padding: 5px;
+    padding: 15px;
 }
 
 .Header-Login {
     display: flex;
     align-items: center;
-    text-align: right;
-    border-style: dashed;
-    border-color: solid black;
-    border-width: 1px;
     padding: 7px;
-    padding-left: 150px;
+    color: white;
+}
+
+.White-Border {
+    background-color: white;
+    padding: 9px;
+    border-radius: 20px;
+}
+
+.Black-Border {
+    background-color: rgb(0, 0, 0);
+    padding: 12px;
+    border-radius: 20px;
+    color: white;
+    margin-left: 30px;
 }
 
 /* Main */
 
 .Main-Container1 {
-    background-color: rgb(0, 0, 255);
-    height: 400px;
+    background-image: url(../img/jumbo.png);
+    background-size: 100%;
+    background-size: cover;
+    height: 600px;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
 .Main-Item1 {
-    background-color: rgb(241, 125, 241);
-    width: 600px;
-    border-style: dashed;
-    border-color: solid black;
-    border-width: 1px;
-    aspect-ratio: 2/1;
+ max-width: 1100px;
+}
+
+.White-Text-H1 {
+    color: white;
+    padding: 15px;
+    font-size: 50px;
+}
+
+.Main-Item1>* {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.Main-Item1>div {
+    font-size: 23px;
 }
 
 /* Container 2 */
 
 .Main-Container2 {
     background-color: rgb(255, 255, 255);
-    height: 500px;
+    min-height: 500px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -96,29 +123,31 @@ li {
 
 .Main-Item2-1 {
     display: flex;
-    background-color: aquamarine;
-    width: 200px;
+    background-image: url(../img/item1.svg);
+    width: 300px;
     height: 300px;
+    background-size: cover;
     flex-grow: 2;
-    margin: 10%;
-    margin-right: 0;
-    border-style: dashed;
-    border-color: solid black;
-    border-width: 1px;
 }
+
+
 
 
 .Main-Item2-2 {
     display: flex;
     background-color: rgb(255, 0, 0);
-    width: 200px;
+    width: 300px;
     height: 300px;
     flex-grow: 1;
     margin: 10%;
-    margin-left: 0;
+    margin-left: 10%;
     border-style: dashed;
     border-color: solid black;
     border-width: 1px;
+}
+
+.Main-Item2-2 h2 {
+    font-size: 50px;
 }
 
 /* Container 3 */
